@@ -18,14 +18,14 @@ import time
 startTime = time.time()
 
 app = FastAPI(
-    title="Torrent-Api-Py",
+    title="Torrent-Api",
     version="1.0.1",
     description=f"Unofficial Torrent-Api",
     docs_url="/docs",
     contact={
-        "name": "Neeraj Kumar",
-        "url": "https://github.com/ryuk-me",
-        "email": "neerajkr1210@gmail.com",
+        "name": "Labani Behera",
+        "url": "https://t.me/l_abani",
+        "email": "dolabani46@gmail.com",
     },
 )
 
@@ -48,7 +48,7 @@ async def health_route(req: Request):
     """
     return JSONResponse(
         {
-            "app": "Torrent-Api-Py",
+            "app": "Torrent-Api",
             "version": "v" + "1.0.1",
             "ip": req.client.host,
             "uptime": ceil(getUptime(startTime)),
